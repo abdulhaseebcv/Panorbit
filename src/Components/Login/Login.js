@@ -20,7 +20,7 @@ function Login() {
     const handleLogin = (userDetails) => {
         console.log('user', userDetails);
         setUser(userDetails)
-        navigate('/profile', { state: 'yes' })
+        navigate('/profile')
     }
 
     useEffect(() => {

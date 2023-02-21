@@ -11,6 +11,7 @@ background: #f8f9fa;
 border-radius: 10px;
 box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 `
+
 export const Details = styled.div`
 text-align: center;
 img{

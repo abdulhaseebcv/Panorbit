@@ -1,33 +1,29 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { List } from './SideNavStyle'
 
 function SideNav() {
-  const navigate = useNavigate()
-  const handleNavigate = (path) => {
-    if (path === 'profile') {
-      navigate('/profile')
-    } else if (path === 'posts') {
-      navigate('/posts')
-    }
-    else if (path === 'gallery') {
-      navigate('/gallery')
-    } else {
-      navigate('/toDo')
-    }
-  }
-  return (
 
-    <div>
-      <ul>
-        <li onClick={() => handleNavigate('profile')}>Profile</li>
-        <hr />
-        <li onClick={() => handleNavigate('posts')}>Posts</li>
-        <hr />
-        <li onClick={() => handleNavigate('gallery')}>Gallery</li>
-        <hr />
-        <li onClick={() => handleNavigate('toDo')}>ToDo</li>
-      </ul>
-    </div>
+  return (
+    <List>
+      <div>
+        <Link to='/profile' style={{ textDecoration: 'none', color: 'white' }}>Profile</Link>
+      </div>
+      <hr />
+      <div>
+        <Link to='/posts' style={{ textDecoration: 'none', color: 'white' }}>Posts</Link>
+      </div>
+      <hr />
+      <div>
+        <Link to='/gallery' style={{ textDecoration: 'none', color: 'white' }}>Gallery</Link>
+      </div>
+      <hr />
+      <div>
+        <Link to='/todo' style={{ textDecoration: 'none', color: 'white' }}>ToDO</Link>
+      </div>
+      <hr />
+    </List>
+
   )
 }
 

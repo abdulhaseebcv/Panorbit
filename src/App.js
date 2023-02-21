@@ -1,10 +1,10 @@
 import './App.css';
 import Login from './Components/Login/Login';
 import { Route, Routes } from 'react-router-dom'
-import Profile from './Components/Profile.js/Profile';
 import Posts from './Components/Post/Posts';
 import Gallery from './Components/Gallery/Gallery';
 import ToDo from './Components/ToDo/ToDo';
+import Profile from './Components/Profile.js/Profile';
 
 function App() {
   return (

@@ -1,8 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { UserContext } from '../../Context/Context'
+import { ToggleContext, UserContext } from '../../Context/Context'
 import { Image, Name, UserContainer } from '../Login/LoginStyle'
-import { HeaderContainer, MainContainer, SignOutContainer, Title } from './HeaderStyle'
-import { useNavigate } from 'react-router-dom'
+import { HeaderContainer, MainContainer, SignOutContainer, ToggleButton } from './HeaderStyle'
 import SignOut from '../SignOut/SignOut'
 import { ExitIcon } from '../SignOut/SignOutStyle'
 
@@ -10,14 +9,17 @@ function Header({ title }) {
     const [account, setAccount] = useState(false)
     const [currentUser, setCurrentUser] = useState({})
     const { user } = useContext(UserContext)
-    const navigate = useNavigate()
+    const { toggle, setToggle } = useContext(ToggleContext)
     useEffect(() => {
         setCurrentUser(user)
     }, [])
     return (
         <MainContainer>
             <HeaderContainer>
-                <Title>{title}</Title>
+                <ToggleButton>
+                    <i onClick={() => setToggle(!toggle)} className={toggle ? "fa-solid fa-xmark" : "fa-solid fa-bars"}></i>
+                </ToggleButton>
+                <h1>{title}</h1>
                 <UserContainer>
                     <Image onClick={() => setAccount(!account)} src={currentUser?.profilepicture}></Image>
                     <Name>{currentUser?.name}</Name>
@@ -30,7 +32,6 @@ function Header({ title }) {
                     <i onClick={() => setAccount(false)} className="fa-solid fa-xmark"></i>
                 </ExitIcon>
             </SignOutContainer>}
-
         </MainContainer>
     )
 }

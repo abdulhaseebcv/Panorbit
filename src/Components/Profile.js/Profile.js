@@ -1,12 +1,14 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { UserContext } from '../../Context/Context'
+import { ToggleContext, UserContext } from '../../Context/Context'
 import Header from '../Header/Header'
+
 import SideNav from '../SideNav/SideNav'
-import { AddressDetails, BreakLineDiv, Details, DetailsContainer, HeaderContainer, Image, LeftSection, MainContainer, Map, RightSection, Section, SideNavContainer, SignOutContainer, Username } from './ProfileStyle'
+import { AddressDetails, BreakLineDiv, Details, DetailsContainer, HeaderContainer, LeftSection, MainContainer, Map, RightSection, Section, SideNavContainer, Image } from './ProfileStyle'
 
 function Profile() {
     const [currentUser, setCurrentUser] = useState({})
     const { user } = useContext(UserContext)
+    const {toggle} = useContext(ToggleContext)
 
     useEffect(() => {
         setCurrentUser(user)

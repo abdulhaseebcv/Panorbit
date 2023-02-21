@@ -10,16 +10,27 @@ hr{
 export const HeaderContainer = styled.div`
 display: flex;
 justify-content: space-between;
-`
-
-export const Title = styled.h1`
-font-size: 1rem;
-font-weight: 600;
-margin-top: 10px;
+h1{
+    color: grey;
+    font-size: 1.8rem;
+    margin-top: 10px;
+    margin-left: 30px;
+}
 `
 
 export const SignOutContainer = styled.div`
     position: absolute;
-    right: 15px;
-    top: 15px;
+    right: 20px;
+    top: 32px;
+    `
+
+export const ToggleButton =styled.div`
+display: none;
+@media (max-width:750px) {
+    display: block;
+    font-size: 27px;
+    margin-top: 4px;
+    padding: 11px;
+    cursor: pointer;
+}
 `
