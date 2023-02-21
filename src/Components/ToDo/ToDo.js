@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../Header/Header'
-import { DetailsContainer, HeaderContainer, MainContainer, SideNavContainer } from '../Profile.js/ProfileStyle'
+import { DetailsContainer, HeaderContainer, MainContainer, SideNavContainer } from '../Profile/ProfileStyle'
 import SideNav from '../SideNav/SideNav'
 
 function ToDo() {

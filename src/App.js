@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom'
 import Posts from './Components/Post/Posts';
 import Gallery from './Components/Gallery/Gallery';
 import ToDo from './Components/ToDo/ToDo';
-import Profile from './Components/Profile.js/Profile';
+import Profile from './Components/Profile/Profile';
 
 function App() {
   return (

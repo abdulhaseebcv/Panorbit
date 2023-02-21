@@ -47,7 +47,6 @@ margin-top: 7px;
 hr{
     margin-top: 7px;
 }
-
 `
 export const Image = styled.img`
 height:2rem;

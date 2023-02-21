@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { UserContext } from '../../Context/Context'
-import { Button, Container, Details, ExitIcon, Name } from './SignOutStyle'
+import { Button, Container, Details} from './SignOutStyle'
 
 function SignOut() {
     const [currentUser, setCurrentUser] = useState({})
