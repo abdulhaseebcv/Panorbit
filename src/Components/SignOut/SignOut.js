@@ -8,7 +8,7 @@ function SignOut() {
     const { user } = useContext(UserContext)
     const navigate = useNavigate()
     const handleSignout = () => {
-        navigate('/')
+        navigate('/Panorbit')
     }
     useEffect(() => {
         setCurrentUser(user)
