@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Panorbit/static/css/main.30454c09.css",
+    "main.js": "/Panorbit/static/js/main.2451b1ee.js",
+    "index.html": "/Panorbit/index.html",
+    "main.30454c09.css.map": "/Panorbit/static/css/main.30454c09.css.map",
+    "main.2451b1ee.js.map": "/Panorbit/static/js/main.2451b1ee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30454c09.css",
+    "static/js/main.2451b1ee.js"
+  ]
+}
